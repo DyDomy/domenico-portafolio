@@ -8,134 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #4a90e2;
-            --text-color: #333;
-            --bg-color: #f8f9fa;
-        }
-
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: #f8f9fa;
+            color: #333;
         }
-
         .navbar {
             background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 10px rgba(0,0,0,.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
         }
-
         .navbar-brand {
             font-weight: 700;
-            color: var(--primary-color);
-            font-size: 1.5rem;
+            color: #007bff;
         }
-
         .nav-link {
             font-weight: 600;
-            color: var(--text-color);
-            margin: 0 15px;
+            color: #333;
+            margin: 0 10px;
             transition: color 0.3s ease;
-            position: relative;
         }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--primary-color);
-            transition: width 0.3s ease;
+        .nav-link:hover {
+            color: #007bff;
         }
-
-        .nav-link:hover::after {
-            width: 100%;
+        .text-highlight {
+            color: #007bff;
         }
-
-        .btn-custom {
-            background-color: var(--primary-color);
-            color: #fff;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-        }
-
-        .btn-custom:hover {
-            background-color: darken(var(--primary-color), 10%);
-            transform: translateY(-2px);
-            box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
-        }
-
-        .card {
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,.1);
-            transition: all 0.3s ease;
-            overflow: hidden;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,.15);
-        }
-
-        .skill-badge {
-            background-color: #e7f1ff;
-            color: var(--primary-color);
-            font-size: 0.9rem;
-            padding: 8px 15px;
-            border-radius: 20px;
-            margin: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .skill-badge:hover {
-            background-color: var(--primary-color);
-            color: #fff;
-            transform: scale(1.05);
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            color: var(--primary-color);
-            position: relative;
-            display: inline-block;
-        }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-
-        #typing::after {
-            content: '|';
-            animation: blink 0.7s infinite;
-        }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
         .timeline {
             position: relative;
             padding: 0;
@@ -203,62 +100,82 @@
             padding: 0 20px 0 100px;
         }
 
-        .testimonial {
-            background-color: #fff;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-
-        .testimonial-author {
-            font-weight: bold;
-        }
-
-        #blog .card {
-            height: 100%;
-        }
-
-        #blog .card-title {
-            font-size: 1.25rem;
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
             font-weight: 600;
-        }
-
-        #blog .card-text {
-            font-size: 0.9rem;
-        }
-
-        #blog .card-footer {
-            background-color: transparent;
-            border-top: none;
-        }
-
-        .social-icons a {
-            display: inline-block;
-            height: 3.5rem;
-            width: 3.5rem;
-            background-color: var(--text-color);
-            color: #fff !important;
-            border-radius: 100%;
-            text-align: center;
-            font-size: 1.5rem;
-            line-height: 3.5rem;
-            margin-right: 1rem;
             transition: all 0.3s ease;
         }
-
-        .social-icons a:last-child {
-            margin-right: 0;
+        .btn-custom:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,123,255,.3);
         }
-
-        .social-icons a:hover {
-            background-color: var(--primary-color);
-            transform: scale(1.1);
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,.15);
+        }
+        .skill-badge {
+            background-color: #e7f1ff;
+            color: #007bff;
+            font-size: 0.9rem;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        .skill-badge:hover {
+            background-color: #007bff;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #007bff;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #007bff;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #typing::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         @media (min-width: 768px) {
@@ -292,6 +209,7 @@
                 padding: 0 30px 20px 20px;
             }
         }
+
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -308,9 +226,6 @@
                     <li class="nav-item"><a class="nav-link" href="#about">Chi Sono</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Esperienza</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Progetti</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Competenze</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonianze</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
                 </ul>
             </div>
@@ -320,16 +235,18 @@
     <main class="container my-5 pt-5">
         <section id="hero" class="text-center mb-5">
             <h1 class="display-4 mb-3 fade-in"><span id="typing"></span></h1>
-            <p class="lead text-primary mb-4 fade-in">Sviluppatore Web Junior</p>
+            <p class="lead text-highlight mb-4 fade-in">Sviluppatore Web Junior</p>
             <a href="#contact" class="btn btn-custom btn-lg fade-in">Contattami</a>
         </section>
 
         <section id="about" class="mb-5 fade-in">
             <h2 class="section-title">Chi Sono</h2>
             <div class="row align-items-center">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <p>Sono uno studente appassionato di informatica presso l'Università Parthenope, con una solida base di programmazione. Il mio obiettivo è continuare a sviluppare le mie competenze in informatica e programmazione, aspirando a diventare un professionista nel settore tecnologico.</p>
-                    <p>La mia passione per la tecnologia e l'innovazione mi spinge costantemente a imparare nuove tecnologie e a migliorare le mie capacità. Sono entusiasta di contribuire a progetti stimolanti e di lavorare in team per creare soluzioni innovative.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <i class="fas fa-laptop-code fa-10x text-primary"></i>
                 </div>
             </div>
         </section>
@@ -351,6 +268,22 @@
                         </div>
                     </div>
                 </li>
+
+                <li>                   
+                    <div class="timeline-image">
+                        <h4>In corso</h4>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Università Parthenope</h4>
+                            <h4 class="subheading">Laurea Triennale in Informatica</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Attualmente sto frequentando il corso di laurea triennale in Informatica, approfondendo le mie conoscenze teoriche e pratiche nel campo dell'informatica e delle tecnologie emergenti.</p>
+                        </div>
+                    </div>
+                </li>
+
                 <li class="timeline-inverted">
                     <div class="timeline-image">
                         <h4>2022-2023</h4>
@@ -365,46 +298,8 @@
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="timeline-image">
-                        <h4>In corso</h4>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>Università Parthenope</h4>
-                            <h4 class="subheading">Laurea Triennale in Informatica</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Attualmente sto frequentando il corso di laurea triennale in Informatica, approfondendo le mie conoscenze teoriche e pratiche nel campo dell'informatica e delle tecnologie emergenti.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
 
-        <section id="projects" class="mb-5 fade-in">
-            <h2 class="section-title">Progetti</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title text-primary">BookingApp</h3>
-                            <p class="card-text">Un sito web di prenotazioni che consente agli utenti di prenotare vari servizi offerti da un'azienda o un'organizzazione, con la possibilità di scegliere diverse fasce orarie e specificare il dipendente preferito per l'erogazione del servizio.</p>
-                            <p class="card-text"><small class="text-muted">Sviluppato utilizzando il framework Laravel</small></p>
-                            <a href="https://github.com/DyDomy/bookingApp" class="btn btn-custom mt-2">Visualizza Progetto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title text-primary">Portfolio Personale</h3>
-                            <p class="card-text">Questo sito web che stai visualizzando è un progetto personale che ho sviluppato per mostrare le mie competenze e i miei lavori. È stato creato utilizzando HTML, CSS e JavaScript con l'ausilio di Bootstrap per un design responsive.</p>
-                            <a href="#" class="btn btn-custom mt-2">Esplora</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </ul>
         </section>
 
         <section id="skills" class="mb-5 fade-in">
@@ -412,89 +307,27 @@
             <div class="d-flex flex-wrap justify-content-center">
                 <span class="skill-badge">HTML</span>
                 <span class="skill-badge">CSS</span>
-                <span class="skill-badge">JavaScript</span>
                 <span class="skill-badge">PHP</span>
                 <span class="skill-badge">Laravel</span>
                 <span class="skill-badge">SQL</span>
                 <span class="skill-badge">MySQL</span>
-                <span class="skill-badge">Git</span>
-                <span class="skill-badge">Bootstrap</span>
-                <span class="skill-badge">Responsive Design</span>
-            </div>
-        </section>
-
-        <section id="testimonials" class="mb-5 fade-in">
-            <h2 class="section-title">Testimonianze</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="testimonial">
-                        <p class="testimonial-text">"Domenico è un giovane sviluppatore molto promettente. Ha dimostrato grande impegno e capacità di apprendimento durante il suo stage presso di noi."</p>
-                        <p class="testimonial-author">- Marco Rossi, CTO di Namiti srl</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="testimonial">
-                        <p class="testimonial-text">"Ho avuto il piacere di lavorare con Domenico su un progetto universitario. La sua dedizione e le sue competenze tecniche hanno contribuito significativamente al successo del progetto."</p>
-                        <p class="testimonial-author">- Prof.ssa Laura Bianchi, Università Parthenope</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog" class="mb-5 fade-in">
-            <h2 class="section-title">Blog</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Le tendenze dello sviluppo web nel 2024</h5>
-                            <p class="card-text">Un'analisi delle tecnologie e delle pratiche emergenti nel mondo dello sviluppo web...</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-sm btn-custom">Leggi di più</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Come ho costruito la mia prima app con Laravel</h5>
-                            <p class="card-text">Un racconto del mio viaggio nello sviluppo della BookingApp, le sfide affrontate e le lezioni apprese...</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-sm btn-custom">Leggi di più</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">L'importanza del continuous learning nello sviluppo software</h5>
-                            <p class="card-text">Riflessioni sull'importanza di continuare ad apprendere e aggiornarsi nel campo dello sviluppo software...</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-sm btn-custom">Leggi di più</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
         <section id="contact" class="text-center mb-5 fade-in">
             <h2 class="section-title">Contattami</h2>
-            <p class="mb-4">Sono attualmente alla ricerca di nuove opportunità. Se hai una domanda o vuoi collaborare, non esitare a contattarmi!</p>
-            <a href="mailto:tavolettadomenico1@gmail.com" class="btn btn-custom btn-lg">Invia un'email</a>
+            <p class="mb-4">Sono attualmente alla ricerca di nuove opportunità. se hai una domanda</p>
+            <a href="mailto:tavolettadomenico1@gmail.com" class="btn btn-custom btn-lg">Contattami</a>
         </section>
     </main>
 
     <footer class="mt-auto py-4 text-center bg-light">
         <div class="container">
             <div class="social-icons mb-3">
-                <a href="https://www.linkedin.com/in/domenico-tavoletta-68790822b/" target="_blank" class="text-dark"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/DyDomy" target="_blank" class="text-dark"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank" class="text-dark"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/domenico-tavoletta-68790822b/" target="_blank" class="text-dark me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/DyDomy" target="_blank" class="text-dark"><i class="fab fa-github fa-2x"></i></a>
             </div>
-            <p>&copy; 2024 Domenico Tavoletta. Tutti i diritti riservati.</p>
+            <p>Progettato e Sviluppato da Domenico Tavoletta</p>
         </div>
     </footer>
 
@@ -516,11 +349,11 @@
             particlesJS("particles-js", {
                 particles: {
                     number: { value: 80, density: { enable: true, value_area: 800 } },
-                    color: { value: "#4a90e2" },
+                    color: { value: "#007bff" },
                     shape: { type: "circle" },
                     opacity: { value: 0.5, random: false },
                     size: { value: 3, random: true },
-                    line_linked: { enable: true, distance: 150, color: "#4a90e2", opacity: 0.4, width: 1 },
+                    line_linked: { enable: true, distance: 150, color: "#007bff", opacity: 0.4, width: 1 },
                     move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
                 },
                 interactivity: {
@@ -540,7 +373,7 @@
                 if (i < textToType.length) {
                     typingElement.innerHTML += textToType.charAt(i);
                     i++;
-                    setTimeout(typeWriter, 100);
+                    setTimeout(typeWriter, 100); // Velocità di digitazione (in millisecondi)
                 }
             }
 
