@@ -3,382 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domenico Tavoletta - Sviluppatore Web</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 4px rgba(0,0,0,.1);
-        }
-        .navbar-brand {
-            font-weight: 700;
-            color: #007bff;
-        }
-        .nav-link {
-            font-weight: 600;
-            color: #333;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-        .nav-link:hover {
-            color: #007bff;
-        }
-        .text-highlight {
-            color: #007bff;
-        }
-        .timeline {
-            position: relative;
-            padding: 0;
-            list-style: none;
-        }
-
-        .timeline:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 40px;
-            width: 2px;
-            margin-left: -1.5px;
-            background-color: #e9ecef;
-        }
-
-        .timeline > li {
-            position: relative;
-            margin-bottom: 50px;
-            min-height: 50px;
-        }
-
-        .timeline > li:before,
-        .timeline > li:after {
-            content: " ";
-            display: table;
-        }
-
-        .timeline > li:after {
-            clear: both;
-        }
-
-        .timeline > li .timeline-panel {
-            float: right;
-            position: relative;
-            width: 100%;
-            padding: 0 20px 0 100px;
-            text-align: left;
-        }
-
-        .timeline > li .timeline-image {
-            left: 0;
-            margin-left: 0;
-            width: 80px;
-            height: 80px;
-            position: absolute;
-            z-index: 100;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 100%;
-            border: 7px solid #e9ecef;
-            text-align: center;
-        }
-
-        .timeline > li .timeline-image h4 {
-            font-size: 10px;
-            margin-top: 12px;
-            line-height: 14px;
-        }
-
-        .timeline > li.timeline-inverted > .timeline-panel {
-            float: right;
-            text-align: left;
-            padding: 0 20px 0 100px;
-        }
-
-        .btn-custom {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        .btn-custom:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,123,255,.3);
-        }
-        .card {
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,.1);
-            transition: all 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,.15);
-        }
-        .skill-badge {
-            background-color: #e7f1ff;
-            color: #007bff;
-            font-size: 0.9rem;
-            padding: 8px 15px;
-            border-radius: 20px;
-            margin: 5px;
-            transition: all 0.3s ease;
-        }
-        .skill-badge:hover {
-            background-color: #007bff;
-            color: #fff;
-            transform: scale(1.05);
-        }
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            color: #007bff;
-            position: relative;
-            display: inline-block;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background-color: #007bff;
-        }
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        #typing::after {
-            content: '|';
-            animation: blink 0.7s infinite;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        @media (min-width: 768px) {
-            .timeline:before {
-                left: 50%;
-            }
-            .timeline > li {
-                margin-bottom: 100px;
-                min-height: 100px;
-            }
-            .timeline > li .timeline-panel {
-                float: left;
-                width: 41%;
-                padding: 0 20px 20px 30px;
-                text-align: right;
-            }
-            .timeline > li .timeline-image {
-                left: 50%;
-                width: 100px;
-                height: 100px;
-                margin-left: -50px;
-            }
-            .timeline > li .timeline-image h4 {
-                font-size: 13px;
-                margin-top: 16px;
-                line-height: 18px;
-            }
-            .timeline > li.timeline-inverted > .timeline-panel {
-                float: right;
-                text-align: left;
-                padding: 0 30px 20px 20px;
-            }
-        }
-
-    </style>
+    <title>Domenico Tavoletta — Developer</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <div id="particles-js"></div>
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">DT</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">Chi Sono</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Esperienza</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Progetti</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
-                </ul>
-            </div>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-logo">
+            <img src="logo.svg" alt="Domenico Tavoletta Logo" />
         </div>
+    </div>
+
+    <!-- Side Navigation -->
+    <nav class="sidenav">
+        <a href="#" class="logo">
+            <img src="logo.svg" alt="Domenico Tavoletta Logo" />
+        </a>
+        <div class="nav-links">
+            <a href="#intro" class="nav-link active">
+                <span class="nav-number">01</span>
+                <span class="nav-text">Intro</span>
+            </a>
+            <a href="#work" class="nav-link">
+                <span class="nav-number">02</span>
+                <span class="nav-text">Work</span>
+            </a>
+            <a href="#projects" class="nav-link">
+                <span class="nav-number">03</span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="#contact" class="nav-link">
+                <span class="nav-number">04</span>
+                <span class="nav-text">Contact</span>
+            </a>
+        </div>
+
     </nav>
 
-    <main class="container my-5 pt-5">
-        <section id="hero" class="text-center mb-5">
-            <h1 class="display-4 mb-3 fade-in"><span id="typing"></span></h1>
-            <p class="lead text-highlight mb-4 fade-in">Sviluppatore Web Junior</p>
-            <a href="#contact" class="btn btn-custom btn-lg fade-in">Contattami</a>
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Intro Section -->
+        <section id="intro" class="intro-section">
+            <div class="intro-content">
+                <p class="intro-label">Ciao, mi chiamo</p>
+                <h1 class="intro-name">Domenico Tavoletta</h1>
+                <h2 class="intro-title">Sviluppo soluzioni web</h2>
+                <p class="intro-description">
+                    Sono un full-stack developer specializzato nella creazione di landing page performanti 
+                    e gestionali web personalizzati. Attualmente lavoro presso <span class="highlight">Namiti SRL</span> 
+                    e studio all'<span class="highlight">Università Parthenope</span>.
+                </p>
+                <a href="#contact" class="cta-button">Inizia un progetto</a>
+            </div>
         </section>
 
-        <section id="about" class="mb-5 fade-in">
-            <h2 class="section-title">Chi Sono</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p>Sono uno studente appassionato di informatica presso l'Università Parthenope, con una solida base di programmazione. Il mio obiettivo è continuare a sviluppare le mie competenze in informatica e programmazione, aspirando a diventare un professionista nel settore tecnologico.</p>
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+            <div class="section-number">02</div>
+            <h2 class="section-title">Esperienza & Competenze</h2>
+            
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-header">
+                        <h3>Programmatore</h3>
+                        <span class="work-period">2023 — Presente</span>
+                    </div>
+                    <p class="work-company">Namiti SRL</p>
+                    <p class="work-description">Sviluppo applicazioni web e gestionali utilizzando PHP, Laravel e JavaScript.</p>
                 </div>
-                <div class="col-md-6 text-center">
-                    <i class="fas fa-laptop-code fa-10x text-primary"></i>
+                
+                <div class="work-card">
+                    <div class="work-header">
+                        <h3>Studente</h3>
+                        <span class="work-period">In corso</span>
+                    </div>
+                    <p class="work-company">Università Parthenope</p>
+                    <p class="work-description">Approfondimento competenze tecniche e teoriche in ambito informatico.</p>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3 class="skills-heading">Stack Tecnologico</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Laravel</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </div>
+
+            <div class="services-section">
+                <h3 class="services-heading">Cosa Offro</h3>
+                <div class="services-list">
+                    <div class="service-box">
+                        <h4>Landing Page</h4>
+                        <p>Pagine web ottimizzate per conversioni con design moderno e performance elevate</p>
+                    </div>
+                    <div class="service-box">
+                        <h4>Gestionali Web</h4>
+                        <p>Applicazioni personalizzate per automatizzare e gestire processi aziendali</p>
+                    </div>
+                    <div class="service-box">
+                        <h4>Siti Responsive</h4>
+                        <p>Siti web professionali che funzionano perfettamente su ogni dispositivo</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="mb-5 fade-in">
-            <h2 class="section-title">Esperienza</h2>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image">
-                        <h4>Presente</h4>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>Namiti srl</h4>
-                            <h4 class="subheading">Stagista Sviluppatore Web</h4>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-number">03</div>
+            <h2 class="section-title">Progetti Selezionati</h2>
+            
+            <div class="projects-list">
+                <a href="https://coruscating-custard-4dfc9f.netlify.app/" target="_blank" class="project-item">
+                    <div class="project-number">01</div>
+                    <div class="project-info">
+                        <h3 class="project-name">B&B La Dolce Vita</h3>
+                        <p class="project-desc">Sito web per bed & breakfast con sistema prenotazioni</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Attualmente lavoro presso Namiti srl come stagista sviluppatore web. Mi occupo principalmente di risolvere problemi nel loro gestionale, contribuendo al miglioramento e all'ottimizzazione del sistema.</p>
-                        </div>
                     </div>
-                </li>
+                    <div class="project-arrow">→</div>
+                </a>
 
-                <li>                   
-                    <div class="timeline-image">
-                        <h4>In corso</h4>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>Università Parthenope</h4>
-                            <h4 class="subheading">Laurea Triennale in Informatica</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Attualmente sto frequentando il corso di laurea triennale in Informatica, approfondendo le mie conoscenze teoriche e pratiche nel campo dell'informatica e delle tecnologie emergenti.</p>
+                <a href="https://relaxed-macaron-72c16d.netlify.app/" target="_blank" class="project-item">
+                    <div class="project-number">02</div>
+                    <div class="project-info">
+                        <h3 class="project-name">Pasticceria Dolce Arte</h3>
+                        <p class="project-desc">Sito vetrina con catalogo prodotti e form contatti</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
-                </li>
+                    <div class="project-arrow">→</div>
+                </a>
 
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>2022-2023</h4>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>ISTITUTO DI ISTRUZIONE SUPERIORE "F. GIORDANI"</h4>
-                            <h4 class="subheading">Diploma di Istruzione Tecnica in "INFORMATICA E TELECOMUNICAZIONI"</h4>
+                <a href="https://kaleidoscopic-fudge-9db792.netlify.app/" target="_blank" class="project-item">
+                    <div class="project-number">03</div>
+                    <div class="project-info">
+                        <h3 class="project-name">Ristorante Il Sapore</h3>
+                        <p class="project-desc">Piattaforma con menu digitale e prenotazione tavoli</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Voto: 95/100</p>
-                        </div>
                     </div>
-                </li>
-
-            </ul>
-        </section>
-
-        <section id="skills" class="mb-5 fade-in">
-            <h2 class="section-title">Competenze</h2>
-            <div class="d-flex flex-wrap justify-content-center">
-                <span class="skill-badge">HTML</span>
-                <span class="skill-badge">CSS</span>
-                <span class="skill-badge">PHP</span>
-                <span class="skill-badge">Laravel</span>
-                <span class="skill-badge">SQL</span>
-                <span class="skill-badge">MySQL</span>
+                    <div class="project-arrow">→</div>
+                </a>
             </div>
         </section>
 
-        <section id="contact" class="text-center mb-5 fade-in">
-            <h2 class="section-title">Contattami</h2>
-            <p class="mb-4">Sono attualmente alla ricerca di nuove opportunità. se hai una domanda</p>
-            <a href="mailto:tavolettadomenico1@gmail.com" class="btn btn-custom btn-lg">Contattami</a>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-number">04</div>
+            <h2 class="section-title">Iniziamo a Collaborare</h2>
+            
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Hai un progetto in mente o vuoi semplicemente fare due chiacchiere? 
+                    Sono sempre aperto a nuove opportunità e collaborazioni.
+                </p>
+                
+                <div class="contact-methods">
+                    <a href="mailto:domenico.tavoletta@email.it" class="contact-method">
+                        <span class="method-label">Email</span>
+                        <span class="method-value">info@domenicotavoletta.it</span>
+                    </a>
+                    <a href="tel:+39123456789" class="contact-method">
+                        <span class="method-label">Telefono</span>
+                        <span class="method-value">+39 123 456 7890</span>
+                    </a>
+                    <div class="contact-method">
+                        <span class="method-label">Località</span>
+                        <span class="method-value">Napoli, Italia</span>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
 
-    <footer class="mt-auto py-4 text-center bg-light">
-        <div class="container">
-            <div class="social-icons mb-3">
-                <a href="https://www.linkedin.com/in/domenico-tavoletta-68790822b/" target="_blank" class="text-dark me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://github.com/DyDomy" target="_blank" class="text-dark"><i class="fab fa-github fa-2x"></i></a>
-            </div>
-            <p>Progettato e Sviluppato da Domenico Tavoletta</p>
-        </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Domenico Tavoletta</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const fadeElems = document.querySelectorAll('.fade-in');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = 1;
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            });
-            fadeElems.forEach(elem => observer.observe(elem));
-
-            particlesJS("particles-js", {
-                particles: {
-                    number: { value: 80, density: { enable: true, value_area: 800 } },
-                    color: { value: "#007bff" },
-                    shape: { type: "circle" },
-                    opacity: { value: 0.5, random: false },
-                    size: { value: 3, random: true },
-                    line_linked: { enable: true, distance: 150, color: "#007bff", opacity: 0.4, width: 1 },
-                    move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
-                },
-                interactivity: {
-                    detect_on: "canvas",
-                    events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
-                    modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
-                },
-                retina_detect: true
-            });
-
-            // Effetto di digitazione
-            const typingElement = document.getElementById('typing');
-            const textToType = "Domenico Tavoletta";
-            let i = 0;
-
-            function typeWriter() {
-                if (i < textToType.length) {
-                    typingElement.innerHTML += textToType.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 100); // Velocità di digitazione (in millisecondi)
-                }
-            }
-
-            typeWriter();
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
