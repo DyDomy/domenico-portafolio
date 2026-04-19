@@ -1,196 +1,757 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domenico Tavoletta — Developer</title>
-    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#1e3a8a">
+
+    <!-- SEO Primary -->
+    <title>Consulente Informatico Caserta | Siti Web Professionali | Domenico Tavoletta</title>
+    <meta name="description" content="Consulente informatico a Caserta. Creo siti web professionali, landing page e gestionali per aziende. Preventivo gratuito. Risposta entro 24h. Campania e tutta Italia.">
+    <meta name="keywords" content="consulente informatico Caserta, sviluppatore web Caserta, creazione sito web Caserta, consulente IT Caserta, sito web Campania, landing page Caserta, sito web aziende Caserta, sviluppo web Napoli">
+    <meta name="author" content="Domenico Tavoletta">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <meta name="language" content="Italian">
+    <meta name="geo.region" content="IT-CE">
+    <meta name="geo.placename" content="Caserta">
+    <link rel="alternate" hreflang="it" href="https://domenicotavoletta.it/">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://domenicotavoletta.it/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://domenicotavoletta.it/">
+    <meta property="og:title" content="Consulente Informatico Caserta | Siti Web Professionali | Domenico Tavoletta">
+    <meta property="og:description" content="Consulente informatico a Caserta. Creo siti web professionali e offro supporto IT. Preventivo gratuito e risposta entro 24h.">
+    <meta property="og:image" content="https://domenicotavoletta.it/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Domenico Tavoletta - Consulente Informatico">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Consulente Informatico Caserta | Domenico Tavoletta">
+    <meta name="twitter:description" content="Creo siti web professionali a Caserta. Preventivo gratuito. Risposta entro 24h.">
+    <meta name="twitter:image" content="https://domenicotavoletta.it/og-image.svg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://domenicotavoletta.it/#business",
+        "name": "Domenico Tavoletta - Consulente Informatico",
+        "description": "Consulente informatico e sviluppatore web a Caserta. Creazione siti web professionali, landing page, gestionali personalizzati e consulenza IT per aziende e professionisti.",
+        "url": "https://domenicotavoletta.it",
+        "telephone": "+393895625126",
+        "email": "info@domenicotavoletta.it",
+        "image": "https://domenicotavoletta.it/og-image.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Caserta",
+          "addressRegion": "Campania",
+          "postalCode": "81100",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.0747,
+          "longitude": 14.3329
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Caserta" },
+          { "@type": "City", "name": "Napoli" },
+          { "@type": "AdministrativeArea", "name": "Campania" },
+          { "@type": "Country", "name": "Italia" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servizi di Consulenza Informatica",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Creazione Siti Web" }, "price": "300", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landing Page" }, "price": "150", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consulenza Informatica" }, "price": "30", "priceCurrency": "EUR" }
+          ]
+        },
+        "priceRange": "€€",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "sameAs": ["https://linkedin.com/in/domenicotavoletta"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://domenicotavoletta.it/#person",
+        "name": "Domenico Tavoletta",
+        "jobTitle": "Consulente Informatico e Sviluppatore Web",
+        "worksFor": { "@type": "Organization", "name": "Namiti SRL" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Università Parthenope" },
+        "email": "info@domenicotavoletta.it",
+        "url": "https://domenicotavoletta.it",
+        "address": { "@type": "PostalAddress", "addressLocality": "Caserta", "addressRegion": "Campania", "addressCountry": "IT" },
+        "knowsAbout": ["Sviluppo Web","PHP","Laravel","MySQL","JavaScript","HTML5","CSS3","SEO","Consulenza Informatica","Landing Page"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://domenicotavoletta.it/" }]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto costa un sito web a Caserta?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Il costo di un sito web varia in base alle esigenze. Una landing page parte da €150, un sito vetrina professionale da €300. Contattami per un preventivo gratuito personalizzato." }
+          },
+          {
+            "@type": "Question",
+            "name": "Cosa fa un consulente informatico?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Un consulente informatico aiuta privati e aziende a sfruttare la tecnologia: crea siti web, risolve problemi informatici, ottimizza processi digitali e fornisce supporto tecnico continuo." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo ci vuole per creare un sito web?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Una landing page è pronta in 3-5 giorni lavorativi. Un sito vetrina completo richiede 1-2 settimane. I tempi dipendono dalla complessità del progetto." }
+          },
+          {
+            "@type": "Question",
+            "name": "Lavori solo a Caserta o anche in altre città?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sono basato a Caserta ma lavoro in tutta Italia da remoto. Collaboro con clienti in tutta la Campania, incluse Napoli, Salerno e le province limitrofe." }
+          },
+          {
+            "@type": "Question",
+            "name": "Come posso richiedere un preventivo?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Puoi contattarmi tramite il modulo sul sito, via email a info@domenicotavoletta.it o su WhatsApp. Il preventivo è completamente gratuito e riceverai una risposta entro 24 ore." }
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.svg">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-logo">
-            <img src="logo.svg" alt="Domenico Tavoletta Logo" />
-        </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Informativa cookie" aria-live="polite">
+        <p>Questo sito usa cookie tecnici per garantire la migliore esperienza di navigazione.</p>
+        <button id="cookie-accept" class="cookie-btn">Accetta e chiudi</button>
     </div>
 
-    <!-- Side Navigation -->
-    <nav class="sidenav">
-        <a href="#" class="logo">
-            <img src="logo.svg" alt="Domenico Tavoletta Logo" />
-        </a>
-        <div class="nav-links">
-            <a href="#intro" class="nav-link active">
-                <span class="nav-number">01</span>
-                <span class="nav-text">Intro</span>
+    <!-- Header -->
+    <header class="site-header" id="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="brand" aria-label="Domenico Tavoletta - Torna alla home">
+                <span class="brand-name">Domenico <strong>Tavoletta</strong></span>
+                <span class="brand-sub">Consulente Informatico · Caserta</span>
             </a>
-            <a href="#work" class="nav-link">
-                <span class="nav-number">02</span>
-                <span class="nav-text">Work</span>
-            </a>
-            <a href="#projects" class="nav-link">
-                <span class="nav-number">03</span>
-                <span class="nav-text">Projects</span>
-            </a>
-            <a href="#contact" class="nav-link">
-                <span class="nav-number">04</span>
-                <span class="nav-text">Contact</span>
-            </a>
+            <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
+                <a href="#servizi" class="nav-link">Servizi</a>
+                <a href="#progetti" class="nav-link">Progetti</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contatti" class="btn-nav-cta">Preventivo Gratuito</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Apri menu di navigazione" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
         </div>
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+            <a href="#servizi" class="mobile-link">Servizi</a>
+            <a href="#progetti" class="mobile-link">Progetti</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contatti" class="mobile-link mobile-cta">Preventivo Gratuito</a>
+        </nav>
+    </header>
 
-    </nav>
+    <main id="main-content">
 
-    <!-- Main Content -->
-    <main class="main-content">
-        
-        <!-- Intro Section -->
-        <section id="intro" class="intro-section">
-            <div class="intro-content">
-                <p class="intro-label">Ciao, mi chiamo</p>
-                <h1 class="intro-name">Domenico Tavoletta</h1>
-                <h2 class="intro-title">Sviluppo soluzioni web</h2>
-                <p class="intro-description">
-                    Sono un full-stack developer specializzato nella creazione di landing page performanti 
-                    e gestionali web personalizzati. Attualmente lavoro presso <span class="highlight">Namiti SRL</span> 
-                    e studio all'<span class="highlight">Università Parthenope</span>.
-                </p>
-                <a href="#contact" class="cta-button">Inizia un progetto</a>
+        <!-- ═══════════════════ HERO ═══════════════════ -->
+        <section class="hero" id="hero" aria-labelledby="hero-h1">
+            <div class="hero-diagonal" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-left">
+<h1 id="hero-h1" class="hero-title animate-up d1">
+                        Hai bisogno di un<br>
+                        <em>sito web</em> o supporto<br>
+                        <em>informatico</em>?<br>
+                        <span class="title-answer">Ci penso io.</span>
+                    </h1>
+                    <p class="hero-desc animate-up d2">
+                        Consulente informatico a <strong>Caserta</strong>. Creo siti web professionali,
+                        gestisco il tuo digitale e ti supporto passo dopo passo — senza tecnicismi complicati.
+                    </p>
+                    <div class="hero-actions animate-up d3">
+                        <a href="mailto:info@domenicotavoletta.it?subject=Richiesta%20Preventivo%20Gratuito" class="btn btn-primary">
+                            Richiedi Preventivo Gratuito
+                        </a>
+                        <a href="#servizi" class="btn btn-ghost">Scopri i Servizi ↓</a>
+                    </div>
+                    <div class="trust-row animate-up d4" aria-label="Garanzie">
+                        <span class="trust-chip">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Risposta entro 24h
+                        </span>
+                        <span class="trust-chip">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Preventivo Gratuito
+                        </span>
+                        <span class="trust-chip">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Pagamenti Flessibili
+                        </span>
+                    </div>
+                </div>
+                <div class="hero-right animate-left d2" aria-hidden="true">
+                    <div class="hero-card-stack">
+                        <div class="hcs-main">
+                            <div class="hcs-label">Chi sono</div>
+                            <div class="hcs-name">Domenico Tavoletta</div>
+                            <div class="hcs-role">Consulente Informatico · Caserta</div>
+                            <div class="hcs-divider"></div>
+                            <div class="hcs-stats">
+                                <div class="hcs-stat">
+                                    <span class="hcs-num">3+</span>
+                                    <span class="hcs-lbl">anni di esperienza</span>
+                                </div>
+                                <div class="hcs-stat">
+                                    <span class="hcs-num">10+</span>
+                                    <span class="hcs-lbl">progetti consegnati</span>
+                                </div>
+                                <div class="hcs-stat">
+                                    <span class="hcs-num">24h</span>
+                                    <span class="hcs-lbl">risposta garantita</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hcs-projects">
+                            <div class="hcs-proj-label">Ultimi lavori</div>
+                            <div class="hcs-proj-item">
+                                <span class="hcs-proj-name">B&B Villa Serenità</span>
+                                <span class="hcs-proj-type">Sito + prenotazioni</span>
+                            </div>
+                            <div class="hcs-proj-item">
+                                <span class="hcs-proj-name">Pasticceria Tavoletta</span>
+                                <span class="hcs-proj-type">Sito vetrina</span>
+                            </div>
+                            <div class="hcs-proj-item">
+                                <span class="hcs-proj-name">Ristorante Aurelia</span>
+                                <span class="hcs-proj-type">Menu + prenotazioni</span>
+                            </div>
+                        </div>
+                        <div class="hcs-status">
+                            <span class="hcs-status-dot"></span>
+                            Disponibile per nuovi progetti
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Work Section -->
-        <section id="work" class="work-section">
-            <div class="section-number">02</div>
-            <h2 class="section-title">Esperienza & Competenze</h2>
-            
-            <div class="work-grid">
-                <div class="work-card">
-                    <div class="work-header">
-                        <h3>Programmatore</h3>
-                        <span class="work-period">2023 — Presente</span>
-                    </div>
-                    <p class="work-company">Namiti SRL</p>
-                    <p class="work-description">Sviluppo applicazioni web e gestionali utilizzando PHP, Laravel e JavaScript.</p>
+        <!-- ═══════════════════ PROBLEMS ═══════════════════ -->
+        <section class="problems" id="problemi" aria-labelledby="problems-h2">
+            <div class="container">
+                <div class="sec-header animate-on-scroll">
+                    <span class="sec-tag">Riconosci il problema?</span>
+                    <h2 id="problems-h2" class="sec-title">Ti suona familiare?</h2>
                 </div>
-                
-                <div class="work-card">
-                    <div class="work-header">
-                        <h3>Studente</h3>
-                        <span class="work-period">In corso</span>
-                    </div>
-                    <p class="work-company">Università Parthenope</p>
-                    <p class="work-description">Approfondimento competenze tecniche e teoriche in ambito informatico.</p>
-                </div>
-            </div>
-
-            <div class="skills-section">
-                <h3 class="skills-heading">Stack Tecnologico</h3>
-                <div class="skills-list">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">PHP</span>
-                    <span class="skill-tag">Laravel</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Responsive Design</span>
-                </div>
-            </div>
-
-            <div class="services-section">
-                <h3 class="services-heading">Cosa Offro</h3>
-                <div class="services-list">
-                    <div class="service-box">
-                        <h4>Landing Page</h4>
-                        <p>Pagine web ottimizzate per conversioni con design moderno e performance elevate</p>
-                    </div>
-                    <div class="service-box">
-                        <h4>Gestionali Web</h4>
-                        <p>Applicazioni personalizzate per automatizzare e gestire processi aziendali</p>
-                    </div>
-                    <div class="service-box">
-                        <h4>Siti Responsive</h4>
-                        <p>Siti web professionali che funzionano perfettamente su ogni dispositivo</p>
-                    </div>
+                <div class="problems-grid">
+                    <article class="prob-card animate-on-scroll">
+                        <div class="prob-index" aria-hidden="true">A</div>
+                        <h3>Non hai un sito web</h3>
+                        <p>I tuoi concorrenti sono online e raccolgono clienti mentre tu non sei trovabile su Google. <strong>Ogni giorno senza sito è un cliente perso.</strong></p>
+                        <a href="#contatti" class="prob-link">Creiamo il tuo sito →</a>
+                    </article>
+                    <article class="prob-card animate-on-scroll">
+                        <div class="prob-index" aria-hidden="true">B</div>
+                        <h3>Il tuo sito è vecchio o lento</h3>
+                        <p>Un sito che fa schifo su mobile o si carica lentamente fa fuggire i visitatori. <strong>Il 53% abbandona se il caricamento supera 3 secondi.</strong></p>
+                        <a href="#contatti" class="prob-link">Rinnoviamo il tuo sito →</a>
+                    </article>
+                    <article class="prob-card animate-on-scroll">
+                        <div class="prob-index" aria-hidden="true">C</div>
+                        <h3>Hai problemi informatici</h3>
+                        <p>Non sai come gestire software, email aziendali, backup o sicurezza. <strong>Ti guido passo per passo senza tecnicismi.</strong></p>
+                        <a href="#contatti" class="prob-link">Chiedi consulenza →</a>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <div class="section-number">03</div>
-            <h2 class="section-title">Progetti Selezionati</h2>
-            
-            <div class="projects-list">
-                <a href="https://coruscating-custard-4dfc9f.netlify.app/" target="_blank" class="project-item">
-                    <div class="project-number">01</div>
-                    <div class="project-info">
-                        <h3 class="project-name">B&B Villa Serenità</h3>
-                        <p class="project-desc">Sito web per bed & breakfast con sistema prenotazioni</p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+        <!-- ═══════════════════ SERVICES ═══════════════════ -->
+        <section class="services" id="servizi" aria-labelledby="services-h2">
+            <div class="container">
+                <div class="sec-header centered animate-on-scroll">
+                    <span class="sec-tag">Cosa offro</span>
+                    <h2 id="services-h2" class="sec-title">Servizi di Consulenza Informatica</h2>
+                    <p class="sec-desc">Soluzioni concrete per privati, liberi professionisti e piccole imprese in tutta la Campania.</p>
+                </div>
+                <div class="services-grid">
+
+                    <article class="svc-card featured animate-on-scroll" aria-label="Creazione Siti Web — da 300 euro">
+                        <div class="svc-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <h3>Creazione Siti Web</h3>
+                        <p>Sito vetrina professionale, ottimizzato per Google e perfetto su mobile. Design moderno e pronto a convertire visitatori in clienti.</p>
+                        <div class="svc-price">da <strong>€300</strong></div>
+                        <ul class="svc-list" aria-label="Caratteristiche incluse">
+                            <li>Design personalizzato</li>
+                            <li>Mobile responsive</li>
+                            <li>SEO ottimizzato</li>
+                            <li>Dominio &amp; hosting guidato</li>
+                        </ul>
+                        <a href="#contatti" class="btn btn-primary">Richiedi preventivo</a>
+                    </article>
+
+                    <article class="svc-card animate-on-scroll" aria-label="Landing Page — da 150 euro">
+                        <div class="svc-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Landing Page</h3>
+                        <p>Pagina singola ad alta conversione per campagne pubblicitarie, prodotti o servizi. Pronta in pochi giorni.</p>
+                        <div class="svc-price">da <strong>€150</strong></div>
+                        <ul class="svc-list">
+                            <li>Struttura ottimizzata per conversioni</li>
+                            <li>Form prenotazione / contatti</li>
+                            <li>Consegna in 3-5 giorni</li>
+                        </ul>
+                        <a href="#contatti" class="btn btn-outline">Richiedi preventivo</a>
+                    </article>
+
+                    <article class="svc-card animate-on-scroll" aria-label="Manutenzione Sito — da 50 euro al mese">
+                        <div class="svc-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Manutenzione Sito</h3>
+                        <p>Aggiornamenti, backup, sicurezza e piccole modifiche mensili. Il tuo sito sempre funzionante senza pensieri.</p>
+                        <div class="svc-price">da <strong>€50/mese</strong></div>
+                        <ul class="svc-list">
+                            <li>Aggiornamenti software</li>
+                            <li>Backup automatici</li>
+                            <li>Supporto prioritario</li>
+                        </ul>
+                        <a href="#contatti" class="btn btn-outline">Richiedi preventivo</a>
+                    </article>
+
+                    <article class="svc-card animate-on-scroll" aria-label="Consulenza Informatica — da 30 euro all'ora">
+                        <div class="svc-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Consulenza Informatica</h3>
+                        <p>Supporto tecnico one-to-one: software, sicurezza, email, automazioni. Ti spiego tutto in modo semplice e chiaro.</p>
+                        <div class="svc-price">da <strong>€30/ora</strong></div>
+                        <ul class="svc-list">
+                            <li>In presenza o videocall</li>
+                            <li>Senza tecnicismi</li>
+                            <li>Soluzioni pratiche e rapide</li>
+                        </ul>
+                        <a href="#contatti" class="btn btn-outline">Richiedi preventivo</a>
+                    </article>
+
+                    <article class="svc-card animate-on-scroll" aria-label="Gestionale Web — preventivo gratuito">
+                        <div class="svc-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+                        </div>
+                        <h3>Gestionale Web</h3>
+                        <p>Applicazione web su misura per gestire prenotazioni, magazzino, clienti o qualsiasi processo aziendale.</p>
+                        <div class="svc-price"><strong>Preventivo gratuito</strong></div>
+                        <ul class="svc-list">
+                            <li>100% personalizzato</li>
+                            <li>Accessibile da qualsiasi device</li>
+                            <li>Formazione inclusa</li>
+                        </ul>
+                        <a href="#contatti" class="btn btn-outline">Richiedi preventivo</a>
+                    </article>
+
+                    <article class="svc-card animate-on-scroll" aria-label="SEO Base — da 200 euro">
+                        <div class="svc-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        </div>
+                        <h3>SEO Base</h3>
+                        <p>Ottimizzazione per apparire su Google quando i clienti cercano i tuoi servizi. Analisi, keyword e ottimizzazione tecnica.</p>
+                        <div class="svc-price">da <strong>€200</strong></div>
+                        <ul class="svc-list">
+                            <li>Analisi keyword locale</li>
+                            <li>Ottimizzazione on-page</li>
+                            <li>Google Business Profile</li>
+                        </ul>
+                        <a href="#contatti" class="btn btn-outline">Richiedi preventivo</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ PROCESS ═══════════════════ -->
+        <section class="process" id="processo" aria-labelledby="process-h2">
+            <div class="container">
+                <div class="sec-header animate-on-scroll">
+                    <span class="sec-tag">Il mio metodo</span>
+                    <h2 id="process-h2" class="sec-title">Come lavoriamo insieme</h2>
+                    <p class="sec-desc">Un processo semplice e trasparente — nessuna sorpresa.</p>
+                </div>
+                <div class="steps-timeline">
+                    <article class="tl-step animate-on-scroll">
+                        <div class="tl-left">
+                            <div class="tl-node"></div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-body">
+                            <span class="tl-num">01 — Contatto</span>
+                            <h3>Mi scrivi, io rispondo</h3>
+                            <p>Descrivi il tuo progetto o problema in poche righe. Nessun modulo lungo, nessun impegno. Rispondo entro 24 ore con una prima valutazione.</p>
+                        </div>
+                    </article>
+                    <article class="tl-step animate-on-scroll">
+                        <div class="tl-left">
+                            <div class="tl-node"></div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-body">
+                            <span class="tl-num">02 — Preventivo</span>
+                            <h3>Cifre chiare, zero sorprese</h3>
+                            <p>Ti mando un preventivo scritto con tempi e costi precisi. Se non ti convince, non mi devi nulla — il preventivo è sempre gratuito.</p>
+                        </div>
+                    </article>
+                    <article class="tl-step animate-on-scroll">
+                        <div class="tl-left">
+                            <div class="tl-node"></div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-body">
+                            <span class="tl-num">03 — Sviluppo</span>
+                            <h3>Ti tengo aggiornato</h3>
+                            <p>Lavoro e ti mostro i progressi man mano. Puoi fare modifiche in corso d'opera — nessun vincolo, nessun "non si può cambiare".</p>
+                        </div>
+                    </article>
+                    <article class="tl-step animate-on-scroll">
+                        <div class="tl-left">
+                            <div class="tl-node last"></div>
+                        </div>
+                        <div class="tl-body">
+                            <span class="tl-num">04 — Consegna</span>
+                            <h3>Consegno e resto disponibile</h3>
+                            <p>Ricevi il lavoro finito e ti spiego come usarlo. Resto reperibile per domande, aggiornamenti e modifiche future.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+        <section class="projects" id="progetti" aria-labelledby="projects-h2">
+            <div class="container">
+                <div class="sec-header animate-on-scroll">
+                    <span class="sec-tag">Portfolio</span>
+                    <h2 id="projects-h2" class="sec-title">Progetti Realizzati</h2>
+                    <p class="sec-desc">Lavori reali per clienti reali.</p>
+                </div>
+                <div class="projects-list">
+
+                    <article class="proj-row animate-on-scroll">
+                        <span class="proj-num" aria-hidden="true">01</span>
+                        <div class="proj-main">
+                            <h3>B&amp;B Villa Serenità</h3>
+                            <p>Sito web per bed &amp; breakfast con sistema di prenotazioni online, galleria fotografica e integrazione Google Maps.</p>
+                        </div>
+                        <div class="proj-side">
+                            <div class="proj-tags" aria-label="Tecnologie">
+                                <span>HTML</span><span>CSS</span><span>JS</span><span>PHP</span>
+                            </div>
+                            <a href="https://coruscating-custard-4dfc9f.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="Visita B&B Villa Serenità (nuova finestra)">
+                                Visita il sito ↗
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="proj-row animate-on-scroll">
+                        <span class="proj-num" aria-hidden="true">02</span>
+                        <div class="proj-main">
+                            <h3>Pasticceria Tavoletta</h3>
+                            <p>Sito vetrina con catalogo prodotti, galleria e form contatti per pasticceria artigianale napoletana.</p>
+                        </div>
+                        <div class="proj-side">
+                            <div class="proj-tags" aria-label="Tecnologie">
+                                <span>HTML</span><span>CSS</span><span>JS</span>
+                            </div>
+                            <a href="https://relaxed-macaron-72c16d.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="Visita Pasticceria Tavoletta (nuova finestra)">
+                                Visita il sito ↗
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="proj-row animate-on-scroll">
+                        <span class="proj-num" aria-hidden="true">03</span>
+                        <div class="proj-main">
+                            <h3>Ristorante Aurelia</h3>
+                            <p>Piattaforma con menu digitale interattivo, sistema prenotazione tavoli online e gestione disponibilità.</p>
+                        </div>
+                        <div class="proj-side">
+                            <div class="proj-tags" aria-label="Tecnologie">
+                                <span>HTML</span><span>CSS</span><span>JS</span><span>PHP</span>
+                            </div>
+                            <a href="https://kaleidoscopic-fudge-9db792.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="Visita Ristorante Aurelia (nuova finestra)">
+                                Visita il sito ↗
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="proj-row animate-on-scroll">
+                        <span class="proj-num" aria-hidden="true">04</span>
+                        <div class="proj-main">
+                            <h3>Progetto 21</h3>
+                            <p>Applicazione web PHP con gestione richieste, salvataggio su database MariaDB, notifiche email automatiche e generazione ricevute PDF. Containerizzata con Docker.</p>
+                        </div>
+                        <div class="proj-side">
+                            <div class="proj-tags" aria-label="Tecnologie">
+                                <span>PHP</span><span>MySQL</span><span>Docker</span><span>Apache</span>
+                            </div>
+                            <span class="proj-private">Progetto privato</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ WHY ME ═══════════════════ -->
+        <section class="why" id="perche" aria-labelledby="why-h2">
+            <div class="container why-grid">
+                <div class="why-left animate-on-scroll">
+                    <span class="sec-tag">Perché scegliermi</span>
+                    <h2 id="why-h2" class="sec-title">Un consulente che parla la tua lingua</h2>
+                    <p class="why-intro">Non sono una grande agenzia con prezzi gonfiati. Sono Domenico — un consulente di Caserta che lavora direttamente con te, senza intermediari.</p>
+                    <div class="why-points">
+                        <div class="why-point">
+                            <div class="why-marker" aria-hidden="true">01</div>
+                            <div>
+                                <h3>Prezzi accessibili</h3>
+                                <p>Non sono un'agenzia con decine di dipendenti da mantenere. Lavoro da solo, i costi sono bassi e li trasferisco su di te.</p>
+                            </div>
+                        </div>
+                        <div class="why-point">
+                            <div class="why-marker" aria-hidden="true">02</div>
+                            <div>
+                                <h3>Parli con me, non con un assistente</h3>
+                                <p>Nessun passaggio di mano, nessun ticket. Mi scrivi e rispondo io — quello che fa il lavoro.</p>
+                            </div>
+                        </div>
+                        <div class="why-point">
+                            <div class="why-marker" aria-hidden="true">03</div>
+                            <div>
+                                <h3>Non sparisco dopo la consegna</h3>
+                                <p>Il mio interesse è che il sito funzioni davvero. Resto disponibile per aggiornamenti, domande e modifiche.</p>
+                            </div>
+                        </div>
+                        <div class="why-point">
+                            <div class="why-marker" aria-hidden="true">04</div>
+                            <div>
+                                <h3>Caserta, ma ovunque</h3>
+                                <p>Puoi venire a trovarmi o chiamarci in videocall. Lavoro con clienti in tutta Italia senza problemi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-right animate-on-scroll">
+                    <div class="about-block">
+                        <div class="ab-quote">
+                            "Ho 21 anni, vengo da Caserta e faccio questo di mestiere da 3 anni. Non ho un ufficio pieno di persone — lavoro direttamente io sui tuoi progetti, senza intermediari."
+                        </div>
+                        <div class="ab-meta">
+                            <div class="ab-name">Domenico Tavoletta</div>
+                            <div class="ab-detail">Sviluppatore web · Università Parthenope · Namiti SRL</div>
+                        </div>
+                        <div class="ab-stack">
                             <span>PHP</span>
-                        </div>
-                    </div>
-                    <div class="project-arrow">→</div>
-                </a>
-
-                <a href="https://relaxed-macaron-72c16d.netlify.app/" target="_blank" class="project-item">
-                    <div class="project-number">02</div>
-                    <div class="project-info">
-                        <h3 class="project-name">Pasticceria Tavoletta</h3>
-                        <p class="project-desc">Sito vetrina con catalogo prodotti e form contatti</p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
                             <span>JavaScript</span>
+                            <span>HTML / CSS</span>
+                            <span>Git</span>
+                        </div>
+                        <div class="ab-cta">
+                            <a href="#contatti" class="btn btn-primary">Scrivimi</a>
+                            <a href="mailto:info@domenicotavoletta.it" class="ab-email">info@domenicotavoletta.it</a>
                         </div>
                     </div>
-                    <div class="project-arrow">→</div>
-                </a>
-
-                <a href="https://kaleidoscopic-fudge-9db792.netlify.app/" target="_blank" class="project-item">
-                    <div class="project-number">03</div>
-                    <div class="project-info">
-                        <h3 class="project-name">Ristorante Aurelia</h3>
-                        <p class="project-desc">Piattaforma con menu digitale e prenotazione tavoli</p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>PHP</span>
-                        </div>
-                    </div>
-                    <div class="project-arrow">→</div>
-                </a>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="section-number">04</div>
-            <h2 class="section-title">Iniziamo a Collaborare</h2>
-            
-            <div class="contact-content">
-                <p class="contact-intro">
-                    Hai un progetto in mente o vuoi semplicemente fare due chiacchiere? 
-                    Sono sempre aperto a nuove opportunità e collaborazioni.
-                </p>
-                
-                <div class="contact-methods">
-                    <a href="mailto:info@domenicotavoletta.it" class="contact-method">
-                        <span class="method-label">Email</span>
-                        <span class="method-value">info@domenicotavoletta.it</span>
-                    </a>
-                    <div class="contact-method">
-                        <span class="method-label">Località</span>
-                        <span class="method-value">Caserta, Italia</span>
+        <!-- ═══════════════════ FAQ ═══════════════════ -->
+        <section class="faq" id="faq" aria-labelledby="faq-h2">
+            <div class="container">
+                <div class="sec-header centered animate-on-scroll">
+                    <span class="sec-tag">Hai domande?</span>
+                    <h2 id="faq-h2" class="sec-title">Domande Frequenti</h2>
+                </div>
+                <div class="faq-list" role="list">
+
+                    <div class="faq-item animate-on-scroll" role="listitem">
+                        <button class="faq-q" aria-expanded="false" aria-controls="fa1">
+                            <span>Quanto costa un sito web a Caserta?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="fa1" class="faq-a" hidden>
+                            <p>Il costo dipende dalla complessità. Una <strong>landing page parte da €150</strong>, un sito vetrina professionale <strong>da €300</strong>. Il preventivo è sempre gratuito e senza impegno — contattami per un'analisi personalizzata.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll" role="listitem">
+                        <button class="faq-q" aria-expanded="false" aria-controls="fa2">
+                            <span>Cosa fa un consulente informatico?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="fa2" class="faq-a" hidden>
+                            <p>Un consulente informatico aiuta privati e aziende a sfruttare la tecnologia al meglio: <strong>crea siti web</strong>, risolve problemi tecnici, ottimizza processi digitali, gestisce email aziendali e fornisce supporto continuo. È il tuo esperto di fiducia per tutto ciò che riguarda il digitale.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll" role="listitem">
+                        <button class="faq-q" aria-expanded="false" aria-controls="fa3">
+                            <span>Quanto tempo ci vuole per creare un sito web?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="fa3" class="faq-a" hidden>
+                            <p>Una <strong>landing page è pronta in 3-5 giorni</strong> lavorativi. Un sito vetrina completo richiede <strong>1-2 settimane</strong>. I tempi dipendono dalla complessità e dalla velocità nel fornire i contenuti (testi e foto).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll" role="listitem">
+                        <button class="faq-q" aria-expanded="false" aria-controls="fa4">
+                            <span>Lavori solo a Caserta o anche in altre città?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="fa4" class="faq-a" hidden>
+                            <p>Sono basato a <strong>Caserta</strong> ma lavoro in <strong>tutta Italia da remoto</strong>. Collaboro con clienti in tutta la Campania (Napoli, Salerno, Caserta e province). Per i clienti locali è possibile incontrarsi di persona.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll" role="listitem">
+                        <button class="faq-q" aria-expanded="false" aria-controls="fa5">
+                            <span>Come posso richiedere un preventivo?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="fa5" class="faq-a" hidden>
+                            <p>Puoi contattarmi tramite il <strong>modulo qui sotto</strong>, via email a <a href="mailto:info@domenicotavoletta.it">info@domenicotavoletta.it</a> o su WhatsApp. Il preventivo è <strong>completamente gratuito</strong> e riceverai risposta entro 24 ore.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll" role="listitem">
+                        <button class="faq-q" aria-expanded="false" aria-controls="fa6">
+                            <span>Ho già un sito, puoi migliorarlo?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="fa6" class="faq-a" hidden>
+                            <p>Assolutamente sì. Posso <strong>rinnovare il design</strong>, migliorare le performance, ottimizzare per la SEO, aggiungere nuove funzionalità o intervenire su problemi specifici del tuo sito esistente.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════ CONTACT ═══════════════════ -->
+        <section class="contact" id="contatti" aria-labelledby="contact-h2">
+            <div class="container contact-grid">
+                <div class="contact-left animate-on-scroll">
+                    <span class="sec-tag">Parliamone</span>
+                    <h2 id="contact-h2" class="sec-title">Pronto a iniziare?</h2>
+                    <p class="contact-desc">Raccontami il tuo progetto. Il preventivo è gratuito e rispondo entro 24 ore.</p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:info@domenicotavoletta.it" class="cmethod" aria-label="Scrivi a info@domenicotavoletta.it">
+                            <div class="cm-icon" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>info@domenicotavoletta.it</span>
+                            </div>
+                        </a>
+                        <div class="cmethod">
+                            <div class="cm-icon" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Posizione</strong>
+                                <span>Caserta, Campania — Italia</span>
+                            </div>
+                        </div>
+                        <a href="https://linkedin.com/in/domenicotavoletta" target="_blank" rel="noopener noreferrer" class="cmethod" aria-label="Profilo LinkedIn (nuova finestra)">
+                            <div class="cm-icon" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <span>Domenico Tavoletta</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-right animate-on-scroll">
+                    <form class="contact-form" id="contact-form" novalidate aria-label="Modulo di contatto per preventivo gratuito">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="f-name">Nome <span aria-hidden="true">*</span></label>
+                                <input type="text" id="f-name" name="name" placeholder="Mario Rossi" required autocomplete="name" aria-required="true">
+                                <span class="ferr" role="alert" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="f-email">Email <span aria-hidden="true">*</span></label>
+                                <input type="email" id="f-email" name="email" placeholder="mario@esempio.it" required autocomplete="email" aria-required="true">
+                                <span class="ferr" role="alert" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-service">Servizio di interesse</label>
+                            <select id="f-service" name="service">
+                                <option value="">Seleziona un servizio...</option>
+                                <option value="sito-web">Creazione Sito Web</option>
+                                <option value="landing-page">Landing Page</option>
+                                <option value="manutenzione">Manutenzione Sito</option>
+                                <option value="consulenza">Consulenza Informatica</option>
+                                <option value="gestionale">Gestionale Web</option>
+                                <option value="seo">SEO</option>
+                                <option value="altro">Altro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-msg">Messaggio <span aria-hidden="true">*</span></label>
+                            <textarea id="f-msg" name="message" placeholder="Descrivimi il tuo progetto o problema..." required rows="5" aria-required="true"></textarea>
+                            <span class="ferr" role="alert" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Invia Richiesta</span>
+                            <span class="btn-loader" hidden aria-hidden="true">...</span>
+                        </button>
+                        <p class="form-note">* Campi obbligatori. Non condivido mai i tuoi dati con terzi.</p>
+                    </form>
+                    <div class="form-success" id="form-success" hidden role="alert" aria-live="polite">
+                        <div class="success-check" aria-hidden="true">✓</div>
+                        <h3>Messaggio inviato!</h3>
+                        <p>Grazie per avermi contattato. Risponderò entro 24 ore.</p>
                     </div>
                 </div>
             </div>
@@ -199,9 +760,34 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 Domenico Tavoletta</p>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-name">Domenico <strong>Tavoletta</strong></span>
+                <p>Consulente Informatico &amp; Sviluppatore Web · Caserta, Italia</p>
+            </div>
+            <nav class="footer-nav" aria-label="Link footer">
+                <a href="#servizi">Servizi</a>
+                <a href="#progetti">Progetti</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contatti">Contatti</a>
+                <a href="mailto:info@domenicotavoletta.it">Email</a>
+            </nav>
+            <p class="footer-copy">© 2025 Domenico Tavoletta · Caserta, Italia · <a href="mailto:info@domenicotavoletta.it">info@domenicotavoletta.it</a></p>
+        </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/393895625126?text=Ciao%20Domenico%2C%20vorrei%20richiedere%20un%20preventivo%20gratuito!"
+       class="whatsapp-fab"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contattami su WhatsApp per un preventivo gratuito"
+       title="WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
 
     <script src="js/script.js"></script>
 </body>
